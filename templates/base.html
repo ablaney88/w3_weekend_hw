@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+      <title>Book List</title>
+    </head>
+    <body>
+        <h1>Library</h1>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/books">List</a></li>
+        </ul>
+        
+        {% block content %}
+        
+        {% endblock %}
+    </body>
+</html>
